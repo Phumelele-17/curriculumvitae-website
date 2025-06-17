@@ -1,0 +1,111 @@
+
+    .page {
+      size: A4 portrait;
+      margin: 15mm;
+      width: 210mm;
+      min-height: 297mm;
+      padding: 15mm;
+      margin: auto;
+      background: white;
+    }
+
+    body {
+      background: white;
+      color: black;
+      font-size: 11pt;
+      print-color-adjust: exact;
+    }
+
+    
+    h1 {
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    h4, h5 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 600;
+      background: white;
+      border: 1px solid white;
+      text-align: center;
+      padding: 3px;
+    }
+
+    h5 {
+      margin-top: -10px;
+    }
+
+    .profile-img {
+      height: 250px;
+      max-width: 100%;
+      border: 2px solid #D5DDE7;
+      border-radius: 40px;
+    }
+
+    .col-md-4 {
+      background: #D5DDE7;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .about-me, .contacts {
+      text-align: center;
+      padding-top: 25px;
+    }
+
+    .skills-list, .hobbies-list, .record-list, .date-list {
+      text-align: left;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    table {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #000;
+      padding: 6px;
+    }
+
+    @media print {
+      .container-fluid {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .row,
+      .col-12,
+      .col-md-4,
+      .col-md-8 {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .text-center {
+        text-align: left;
+      }
+
+      ion-icon {
+        display: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      h1, h4, h5, table {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+      }
+
+      .about-me, .contacts, .hobbies, .skills-list {
+        page-break-inside: avoid;
+      }
+    }
